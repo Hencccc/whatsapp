@@ -24,11 +24,17 @@ const errorHandler = (error, req, res, next) => {
 }
 
 const pusher = new Pusher({
-  appId: '1286479',
-  key: 'c66c1ba0ef82ab0906c3',
-  secret: '0ff007ac59014de2e242',
-  cluster: 'eu',
-  useTLS: true,
+  appId: process.env.PUSHER_appId,
+  key: process.env.PUSHER_key,
+  secret: process.env.PUSHER_secret,
+  cluster: process.env.PUSHER_cluster,
+  useTLS: process.env.PUSHER_useTLS,
+
+  // appId: '1286479',
+  // key: 'c66c1ba0ef82ab0906c3',
+  // secret: '0ff007ac59014de2e242',
+  // cluster: 'eu',
+  // useTLS: true,
 })
 
 export default {
