@@ -8,24 +8,27 @@
   display: flex;
   justify-content: space-between;
   padding: 23.2px;
-  border-right: 1px solid lightgray;
+  border-right: 1px solid rgb(28, 29, 35);
+  background-color: rgb(28, 29, 35);
 }
 .sidebar__headerRight {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   min-width: 10vw;
 }
 
 .sidebar__headerRight > .MuiSvgIcon-root {
   margin-right: 2vw;
   font-size: 24px !important;
+  color: rgb(182, 177, 177) I !important;
 }
 
 .sidebar__search {
   display: flex;
   align-items: center;
-  background-color: #ebebeb;
+  background-color: rgb(28, 29, 35);
   height: 37px;
   padding: 10px;
 }
@@ -40,7 +43,7 @@
 }
 
 .sidebar__searchContainer > .MuiSvgIcon-root {
-  color: gray;
+  color: rgb(182, 177, 177);
   padding: 10px;
 }
 
@@ -54,9 +57,10 @@
 
 .sidebar__chats {
   flex: 1;
-  background-color: white;
+  background-color: rgb(28, 29, 35);
   overflow: scroll;
   scrollbar-width: none;
+  color: rgb(158, 156, 156);
 }
 ::-webkit-scrollbar {
   display: none;
