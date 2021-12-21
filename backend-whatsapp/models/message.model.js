@@ -8,5 +8,3 @@ const whatsappSchema = mongoose.Schema({
   received: Boolean,
 })
 export default mongoose.model('messagecontents', whatsappSchema)
-
-//https://www.freecodecamp.org/news/create-a-professional-node-express/
